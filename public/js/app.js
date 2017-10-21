@@ -108,6 +108,7 @@ __webpack_require__(3);
 $(document).ready(function () {
   $('.button-collapse').sideNav();
   Materialize.updateTextFields();
+  $('.parallax').parallax();
 });
 
 /***/ }),
