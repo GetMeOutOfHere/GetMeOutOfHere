@@ -21,8 +21,71 @@
     </head>
     <body>
       @includeIf('partials/_navbar')
-      <div class="container">
-        @yield('content')
+
+      <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <br><br>
+            <h1 class="header center white-text banner-title">Get A Great Excuse When You Need It Most</h1>
+            <div class="row center">
+              <h4 class="header col s12 white-text light banner-description">Stuck In An Awkward Social Situation?  <br> Have A Reason To Leave Texted To Your Phone</h5>
+            </div>
+            <div class="row center">
+              <a href="http://materializecss.com/getting-started.html" id="sign-up-button" class="btn-large waves-effect waves-light red darken-3">Get Your Excuse Ready Now!</a>
+            </div>
+            <br><br>
+
+          </div>
+        </div>
+        <div class="parallax"><img src="awkward.jpeg" alt="Unsplashed background img 1"></div>
       </div>
+
+      <div class="container">
+<<<<<<< HEAD
+        @yield('content')
+=======
+        <div class="section" id="how-it-work">
+          <div class="row">
+            <div class="col s12">
+              <h1 class="header center red-text text-darken-3 how-it-work-title">How It Works
+            </div>
+            <div class="col s12 m3 offset-m1">
+              <div class="icon-block center">
+                <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                <h4 class="center">Sign Up</h4>
+
+                <p class="light">Tell us who you are, and importantly, what your phone number is.</p>
+                <p class="light"> Add our number to your phone. Call us "Mum" or "Hubby".</p>
+              </div>
+            </div>
+
+            <div class="col s12 m3">
+              <div class="icon-block center">
+                <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                <h4 class="center">Set Up</h4>
+
+                <p class="light">Tell us what to text you with, and when to text you. Get Imaginative!</p>
+              </div>
+            </div>
+
+            <div class="col s12 m3">
+              <div class="icon-block center">
+                <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+                <h4 class="center">Get Out</h4>
+
+                <p class="light">Get your text.</p>
+                <p class="light">Look startled.</p>
+                <p class="light">Show them the text.</p>
+                <p class="light">Get the hell out.</p>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+>>>>>>> 8ccc7c04a4b86ce562085164a020b8e4d8f7c9a9
+      </div>
+
+
     </body>
 </html>

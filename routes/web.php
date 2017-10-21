@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('layouts/main');
+    return view('home');
 });
 
 Route::group(['middleware' => 'auth'], function(){

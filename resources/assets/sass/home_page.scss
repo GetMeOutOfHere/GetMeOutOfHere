@@ -1,0 +1,26 @@
+#index-banner {
+  .banner-title,
+  .banner-description {
+    text-shadow: -1px 1px #444;
+  }
+
+  .banner-description {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  #sign-up-button {
+    font-size: 15px;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+#how-it-work {
+  font-size: 15px;
+  .how-it-work-title {
+    font-weight: 600;
+  }
+}
