@@ -29,13 +29,13 @@
               <h5 class="header col s12 white-text light banner-description">Stuck In An Awkward Social Situation?  <br> Have A Reason To Leave Texted To Your Phone</h5>
             </div>
             <div class="row center">
-              <a href="http://materializecss.com/getting-started.html" id="sign-up-button" class="btn-large waves-effect waves-light red darken-3">Sign Up Now!</a>
+              <a href="http://materializecss.com/getting-started.html" id="sign-up-button" class="btn-large waves-effect waves-light red darken-3">Get Your Excuse Ready Now!</a>
             </div>
             <br><br>
 
           </div>
         </div>
-        <div class="parallax"><img src="banner.jpg" alt="Unsplashed background img 1"></div>
+        <div class="parallax"><img src="awkward.jpeg" alt="Unsplashed background img 1"></div>
       </div>
 
       <div class="container">
