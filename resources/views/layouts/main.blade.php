@@ -44,18 +44,18 @@
             <div class="col s12">
               <h1 class="header center red-text text-darken-3 how-it-work-title">How It Works
             </div>
-            <div class="col s12 m4">
-              <div class="icon-block">
+            <div class="col s12 m3 offset-m1">
+              <div class="icon-block center">
                 <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
                 <h5 class="center">Sign Up</h5>
 
                 <p class="light">Tell us who you are, and importantly, what your phone number is.</p>
-                <p class="light">Add our number to your phone. Call us "Mum" or "Hubby".</p>
+                <p class="light"> Add our number to your phone. Call us "Mum" or "Hubby".</p>
               </div>
             </div>
 
-            <div class="col s12 m4">
-              <div class="icon-block">
+            <div class="col s12 m3">
+              <div class="icon-block center">
                 <h2 class="center brown-text"><i class="material-icons">group</i></h2>
                 <h5 class="center">Set Up</h5>
 
@@ -63,8 +63,8 @@
               </div>
             </div>
 
-            <div class="col s12 m4">
-              <div class="icon-block">
+            <div class="col s12 m3">
+              <div class="icon-block center">
                 <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
                 <h5 class="center">Get Out</h5>
 
@@ -72,7 +72,7 @@
                 <p class="light">Look startled.</p>
                 <p class="light">Show them the text.</p>
                 <p class="light">Get the hell out.</p>
-                
+
               </div>
             </div>
           </div>
