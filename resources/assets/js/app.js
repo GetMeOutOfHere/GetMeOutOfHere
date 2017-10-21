@@ -22,3 +22,4 @@
 // });
 
 require('./partials/navbar');
+require('./partials/sms_queue');
