@@ -15,9 +15,12 @@ Route::get('/', function () {
     return view('layouts/main');
 });
 
-Route::get('/sms_queue', function () {
-    return view('layouts/sms_queue');
+Route::group(['middleware' => 'auth'], function(){
+    Route::get('dashboard', 'PageController@dashboard')->name('dashboard');
+    Route::match(['get', 'post'], 'schedule-sms', 'PageController@scheduleSms')->name('schedule_sms');
 });
+
+
 
 Auth::routes();
 

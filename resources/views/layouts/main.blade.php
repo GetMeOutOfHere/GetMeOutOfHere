@@ -20,7 +20,7 @@
     <body>
       @includeIf('partials/_navbar')
       <div class="container">
-        @includeIf('partials/_sign_up_form')
+        @yield('content')
       </div>
     </body>
 </html>
