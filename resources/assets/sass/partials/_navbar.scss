@@ -1,0 +1,31 @@
+nav#navbar {
+  ul a,
+  .brand-logo {
+    color: #444;
+    text-decoration: none;
+    font-weight: 600;
+    color: #C62828;
+  }
+
+  .brand-logo {
+    font-size: 2.3rem;
+    img.logo {
+      max-width: 6%;
+    }
+    @media (max-width: 425px) {
+      font-size: 1.3rem;
+      img.logo {
+        max-width: 15%;
+      }
+    }
+  }
+  .button-collapse {
+    color: #26a69a;
+  }
+
+  .menu-ul {
+    li a {
+      font-size: 15px;
+    }
+  }
+}

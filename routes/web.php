@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts/main');
+});
+
+Route::get('/sms_queue', function () {
+    return view('layouts/sms_queue');
 });
 
 Auth::routes();

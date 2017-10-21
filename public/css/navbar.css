@@ -1,0 +1,9 @@
+nav#navbar ul a,
+nav#navbar .brand-logo {
+  color: #444;
+}
+
+nav#navbar .button-collapse {
+  color: #26a69a;
+}
+
