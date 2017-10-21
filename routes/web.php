@@ -19,11 +19,8 @@ Route::get('/sms_queue', function () {
     return view('layouts/sms_queue');
 });
 
-<<<<<<< HEAD
 Route::get('/login', function () {
     return view('layouts/login');
 });
-=======
-Auth::routes();
 
->>>>>>> 424c71327fdc7ac48ca2358a11ba1516488dc281
+Auth::routes();
