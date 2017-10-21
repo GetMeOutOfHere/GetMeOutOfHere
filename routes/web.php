@@ -17,10 +17,7 @@ Route::get('/', function () {
 
 Route::group(['middleware' => 'auth'], function(){
     Route::get('dashboard', 'PageController@dashboard')->name('dashboard');
-    Route::match(['get', 'post'], 'schedule-sms', 'PageController@scheduleSms')->name('schedule_sms');
+    Route::post('schedule-sms', 'PageController@scheduleSms')->name('schedule_sms');
 });
 
-
-
 Auth::routes();
-

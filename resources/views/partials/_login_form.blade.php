@@ -1,9 +1,5 @@
-@extends('layouts.main')
-
-@section('content')
 <div class="row">
-  <form class="col s12 center" action="{{ route('login') }}" id="login-form">
-    {{ csrf_field() }}
+  <form class="col s12 center" action="#" id="login-form">
     <div class="row">
       <div class="col s12 center">
         <h3>Login Here!</h3>
@@ -26,4 +22,3 @@
     <button type="submit" class="waves-effect waves-light btn"><i class="material-icons right">send</i>Login</button>
   </form>
 </div>
-@endsection

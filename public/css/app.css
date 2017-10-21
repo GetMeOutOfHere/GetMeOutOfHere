@@ -37,7 +37,9 @@ nav#navbar .menu-ul li a {
 #sign-up input,
 #sign-up label,
 #sms-queue input,
-#sms-queue label {
+#sms-queue label,
+#login-form input,
+#login-form label {
   font-size: 15px;
 }
 
