@@ -26,7 +26,7 @@
             <br><br>
             <h1 class="header center white-text banner-title">Get A Great Excuse When You Need It Most</h1>
             <div class="row center">
-              <h5 class="header col s12 white-text light banner-description">Stuck In An Awkward Social Situation?  <br> Have A Reason To Leave Texted To Your Phone</h5>
+              <h4 class="header col s12 white-text light banner-description">Stuck In An Awkward Social Situation?  <br> Have A Reason To Leave Texted To Your Phone</h5>
             </div>
             <div class="row center">
               <a href="http://materializecss.com/getting-started.html" id="sign-up-button" class="btn-large waves-effect waves-light red darken-3">Get Your Excuse Ready Now!</a>
@@ -47,7 +47,7 @@
             <div class="col s12 m3 offset-m1">
               <div class="icon-block center">
                 <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-                <h5 class="center">Sign Up</h5>
+                <h4 class="center">Sign Up</h4>
 
                 <p class="light">Tell us who you are, and importantly, what your phone number is.</p>
                 <p class="light"> Add our number to your phone. Call us "Mum" or "Hubby".</p>
@@ -57,7 +57,7 @@
             <div class="col s12 m3">
               <div class="icon-block center">
                 <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-                <h5 class="center">Set Up</h5>
+                <h4 class="center">Set Up</h4>
 
                 <p class="light">Tell us what to text you with, and when to text you. Get Imaginative!</p>
               </div>
@@ -66,7 +66,7 @@
             <div class="col s12 m3">
               <div class="icon-block center">
                 <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-                <h5 class="center">Get Out</h5>
+                <h4 class="center">Get Out</h4>
 
                 <p class="light">Get your text.</p>
                 <p class="light">Look startled.</p>
