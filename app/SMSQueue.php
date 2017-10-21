@@ -34,7 +34,7 @@ class SMSQueue extends Model
         $data = [
             "outboundSMSMessageRequest" => [
                 "address" => [
-                    "tel:".$this->send_to
+                    "tel:+".$this->send_to
                 ],
                 "senderAddress" => "tel:+310",
                 "outboundSMSTextMessage" => [
