@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/sms_queue', function () {
     return view('layouts/sms_queue');
 });
+
+Route::get('/login', function () {
+    return view('layouts/login');
+});
