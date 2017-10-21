@@ -23,7 +23,7 @@ $(document).ready(function() {
     scheduleTime = $('#schedule-time').val();
     dateObject   = new Date(scheduleDate + ' ' + scheduleTime);
     year         = dateObject.getFullYear();
-    month        = dateObject.getMonth();
+    month        = dateObject.getMonth() + 1;
     day          = dateObject.getDay();
     hour         = dateObject.getHours();
     minute       = dateObject.getMinutes();

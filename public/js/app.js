@@ -144,7 +144,7 @@ $(document).ready(function () {
     day = dateObject.getDay();
     hour = dateObject.getHours();
     minute = dateObject.getMinutes();
-    $('#set-schedule').val(year + '/' + month + '/' + day + '/' + hour + '/' + minute + '/00');
+    $('#set-schedule').val(year + '/' + month + '/' + day + '/' + hour + '/' + minute + '/0');
   });
 });
 
