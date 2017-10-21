@@ -1,8 +1,8 @@
 <nav class="white" role="navigation" id="navbar">
   <div class="nav-wrapper container">
     <a id="logo-container" href="#" class="brand-logo">
-      <img src="getmeoutofhere.png" alt="Get Me Out of Here" class="logo">
-      <span>Get Me Out of Here</span>
+      <img src="getmeoutofhere.png" alt="Get Me Out Of Here" class="logo">
+      <span>Get Me Out Of Here</span>
     </a>
     <ul class="right hide-on-med-and-down menu-ul">
       <li><a href="#">Sign Up</a></li>
