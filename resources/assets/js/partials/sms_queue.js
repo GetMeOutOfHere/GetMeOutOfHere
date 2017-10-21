@@ -18,7 +18,7 @@ $(document).ready(function() {
     ampmclickable: true
   });
 
-  $('#sms-queue').submit(function() {
+  $('#submit-sms-queue').click(function() {
     scheduleDate = $('#schedule-date').val();
     scheduleTime = $('#schedule-time').val();
     dateObject   = new Date(scheduleDate + ' ' + scheduleTime);
@@ -27,6 +27,7 @@ $(document).ready(function() {
     day          = dateObject.getDay();
     hour         = dateObject.getHours();
     minute       = dateObject.getMinutes();
+
     $('#set-schedule').val(year + '/' + month + '/' + day + '/' + hour + '/' + minute + '/0' );
   })
 });
