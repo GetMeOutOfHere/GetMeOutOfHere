@@ -35,10 +35,13 @@ nav#navbar .menu-ul li a {
 }
 
 #sign-up input,
+#sign-up textarea,
 #sign-up label,
 #sms-queue input,
+#sms-queue textarea,
 #sms-queue label,
 #login-form input,
+#login-form textarea,
 #login-form label {
   font-size: 15px;
 }
@@ -8418,5 +8421,18 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+
+#toast-container .success-toast {
+  background-color: #26a69a !important;
+}
+
+#toast-container .error-toast {
+  background-color: #c62828 !important;
+}
+
+#toast-container .success-toast,
+#toast-container .error-toast {
+  font-size: 20px !important;
 }
 

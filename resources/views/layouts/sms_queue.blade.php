@@ -62,25 +62,29 @@
   </form>
   @if(Session::has('success'))
     <script>
-      swal({
-        title: "Done",
-        text: "{{ Session::get('success') }}",
-        type: "success",
-        timer: 5000,
-        allowOutsideClick: true
-      });
+      // swal({
+      //   title: "Done",
+      //   text: "{{ Session::get('success') }}",
+      //   type: "success",
+      //   timer: 5000,
+      //   allowOutsideClick: true
+      // });
+      Materialize.toast("{{ Session::get('success') }}", 4000);
+      $('#toast-container .toast').addClass('success-toast');
     </script>
   @endif
 
   @if(Session::has('error'))
     <script>
-      swal({
-        title: "Opp! Something went wrong",
-        text: "{{ Session::get('error') }}",
-        type: "error",
-        timer: 5000,
-        allowOutsideClick: true
-      });
+      // swal({
+      //   title: "Opp! Something went wrong",
+      //   text: "{{ Session::get('error') }}",
+      //   type: "error",
+      //   timer: 5000,
+      //   allowOutsideClick: true
+      // });
+      Materialize.toast("{{ Session::get('error') }}", 4000);
+      $('#toast-container .toast').addClass('error-toast');
     </script>
   @endif
 </div>

@@ -10,3 +10,17 @@
 
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+#toast-container {
+  .success-toast {
+    background-color: #26a69a !important;
+  }
+  .error-toast {
+    background-color: #c62828 !important;
+  }
+
+  .success-toast,
+  .error-toast {
+    font-size: 20px !important;
+  }
+}
