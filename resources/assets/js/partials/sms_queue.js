@@ -18,7 +18,30 @@ $(document).ready(function() {
     ampmclickable: true
   });
 
+  $('#emergency-text').click(function() {
+    currentDate = new Date();
+    phoneNumber = $('#send-to').data('number');
+    $('#send-to').val(phoneNumber);
+    $('#fake-sender-name').val('anonymous');
+    rendomMessage();
+    timeMachine(currentDate);
+
+    // debugger;
+    $('form#sms-queue').trigger('submit');
+  });
+
   $('#rendom-button').click(function() {
+    rendomMessage();
+  });
+
+  $('#submit-sms-queue').click(function() {
+    scheduleDate = $('#schedule-date').val();
+    scheduleTime = $('#schedule-time').val();
+    setSchedule  = scheduleDate + ' ' + scheduleTime;
+    timeMachine(setSchedule);
+  });
+
+  function rendomMessage() {
     rendomNumber = Math.floor((Math.random() * 7) + 1);
     arraySms =
     ["COME HOME NOW!!! Your brother did the thing again. I NEED YOU!!!",
@@ -31,12 +54,11 @@ $(document).ready(function() {
     "Sir, I have found your wallet. Please meet me at the police station"];
 
     $('#message').val(arraySms[rendomNumber]);
-  });
+    $('#hidden-message').val(arraySms[rendomNumber]);
+  }
 
-  $('#submit-sms-queue').click(function() {
-    scheduleDate = $('#schedule-date').val();
-    scheduleTime = $('#schedule-time').val();
-    dateObject   = new Date(scheduleDate + ' ' + scheduleTime);
+  function timeMachine(setSchedule) {
+    dateObject   = new Date(setSchedule);
     year         = dateObject.getFullYear();
     month        = dateObject.getMonth() + 1;
     day          = dateObject.getDate();
@@ -44,7 +66,7 @@ $(document).ready(function() {
     minute       = dateObject.getMinutes();
 
     $('#set-schedule').val(year + '/' + month + '/' + day + '/' + hour + '/' + minute + '/0' );
-  });
+  }
 
   $('.btn-logout').on('click', function(e){
     e.preventDefault();

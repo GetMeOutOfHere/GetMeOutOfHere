@@ -53,6 +53,14 @@ nav#navbar .menu-ul li a {
   color: #444;
 }
 
+.emergency {
+  padding-top: 15px !important;
+}
+
+.emergency #emergency-text {
+  font-size: 15px;
+}
+
 #index-banner .banner-title,
 #index-banner .banner-description {
   text-shadow: -1px 1px #444;

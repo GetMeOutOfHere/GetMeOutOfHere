@@ -43,9 +43,11 @@ class PageController extends Controller
                 $send_to = $request->input('send_to');
                 $message = $request->input('message');
                 $send_time = $request->input('send_time');
+
+                Log::info($send_time);
+
                 list($y, $m, $d, $h, $mi, $s) = explode("/", $send_time);
                 $date = Carbon::create($y, $m, $d, $h, $mi, $s, "Asia/Phnom_Penh");
-                Log::info($send_time." ".$date." ". $y." " .$m." ". $d." " .$h." ". $mi." ". $s);
                 $sms = SMSQueue::create([
                     'fake_sender_name' => $fake_sender_name,
                     'send_to' => $send_to,
@@ -86,7 +88,7 @@ class PageController extends Controller
                         ],
                         "senderAddress" => "tel:+310",
                         "outboundSMSTextMessage" => [
-                            "message" =>  $request->input('message');
+                            "message" =>  $request->input('message')
                         ],
                         "clientCorrelator" => "123457:AIN12346",
                         "receiptRequest" => [

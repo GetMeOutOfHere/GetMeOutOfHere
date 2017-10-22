@@ -21,24 +21,25 @@
     </head>
     <body>
       @includeIf('partials/_navbar')
+      @if(!Auth::user())
+        <div id="index-banner" class="parallax-container">
+          <div class="section no-pad-bot">
+            <div class="container">
+              <br><br>
+              <h1 class="header center white-text banner-title">Get A Great Excuse When You Need It Most</h1>
+              <div class="row center">
+                <h4 class="header col s12 white-text light banner-description">Stuck In An Awkward Social Situation?  <br> Have A Reason To Leave Texted To Your Phone</h5>
+              </div>
+              <div class="row center">
+                <a href="{{ route('dashboard') }}" id="sign-up-button" class="btn-large waves-effect waves-light red darken-3">Get Your Excuse Ready Now!</a>
+              </div>
+              <br><br>
 
-      <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-          <div class="container">
-            <br><br>
-            <h1 class="header center white-text banner-title">Get A Great Excuse When You Need It Most</h1>
-            <div class="row center">
-              <h4 class="header col s12 white-text light banner-description">Stuck In An Awkward Social Situation?  <br> Have A Reason To Leave Texted To Your Phone</h5>
             </div>
-            <div class="row center">
-              <a href="{{ route('dashboard') }}" id="sign-up-button" class="btn-large waves-effect waves-light red darken-3">Get Your Excuse Ready Now!</a>
-            </div>
-            <br><br>
-
           </div>
+          <div class="parallax"><img src="awkward.jpeg" alt="Unsplashed background img 1"></div>
         </div>
-        <div class="parallax"><img src="awkward.jpeg" alt="Unsplashed background img 1"></div>
-      </div>
+      @endif
 
       <div class="container">
         @yield('content')

@@ -2,6 +2,12 @@
 @section('content')
 
 <div class="row">
+  <div class="col s12 center emergency">
+    <span class="waves-effect waves-light btn-large red darken-3" id="emergency-text">It's emergency! Send me a text NOW!</span>
+  </div>
+</div>
+
+<div class="row">
   <form class="col s12 center" method="POST" action="{{ route('schedule_sms') }}" id="sms-queue">
     {{ csrf_field() }}
     <div class="row">
@@ -26,14 +32,15 @@
     <div class="row">
       <div class="input-field col s12 m6 push-m3">
         <i class="material-icons prefix">send</i>
-        <input id="send-to" type="text" class="validate" name="send_to">
+        <input id="send-to" type="text" class="validate" name="send_to" data-number="{{ Auth::user()->phonenumber }}">
         <label for="send-to">Send To</label>
       </div>
     </div>
     <div class="row">
       <div class="input-field col s12 m6 push-m3">
         <i class="material-icons prefix">sms</i>
-        <textarea name="message" id="message" disabled  class="materialize-textarea"></textarea>
+        <textarea id="message" disabled  class="materialize-textarea"></textarea>
+        <input id="hidden-message" type="hidden" name="message">
         <span class="btn" id="rendom-button">Generate Message</span>
       </div>
     </div>
