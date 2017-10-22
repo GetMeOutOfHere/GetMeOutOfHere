@@ -12,7 +12,7 @@
     {{ csrf_field() }}
     <div class="row">
       <div class="col s12 center">
-        <h3>Set Up Get Me Out of Here!</h3>
+        <h3>Set Up Your Service!</h3>
       </div>
     </div>
     <div class="row">
