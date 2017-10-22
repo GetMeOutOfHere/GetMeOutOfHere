@@ -60,37 +60,37 @@ class SMSQueue extends Model
         ]);
         $message->update(['send_status' => 1]);
 
-        // $charge_data = [
-        //    "amountTransaction" => [
-        //       "clientCorrelator" => uniqid("GET-ME-OUT-OF-HERE-", true),
-        //       "endUserId" => "tel:+".$this->send_to,
-        //       "paymentAmount" => [
-        //          "chargingInformation" => [
-        //             "amount" => "0.01",
-        //             "currency" => "USD",
-        //             "description" => "Get me out of here subscription."
-        //         ],
-        //          "chargingMetaData" => [
-        //             "onBehalfOf" => "Get me out of here Inc",
-        //             "channel" => "WAP",
-        //             "taxAmount" => "0"
-        //         ]
-        //       ],
-        //       "referenceCode" => "HACKANTON-001",
-        //       "transactionOperationStatus" => "Charged"
-        //   ]
-        // ];
+        $charge_data = [
+           "amountTransaction" => [
+              "clientCorrelator" => uniqid("GET-ME-OUT-OF-HERE-", true),
+              "endUserId" => "tel:+".$this->send_to,
+              "paymentAmount" => [
+                 "chargingInformation" => [
+                    "amount" => "0.01",
+                    "currency" => "USD",
+                    "description" => "Get me out of here subscription."
+                ],
+                 "chargingMetaData" => [
+                    "onBehalfOf" => "Get me out of here Inc",
+                    "channel" => "WAP",
+                    "taxAmount" => "0"
+                ]
+              ],
+              "referenceCode" => "HACKANTON-001",
+              "transactionOperationStatus" => "Charged"
+          ]
+        ];
 
-        // $chargeClient->request('POST', $charge_api, [
-        //     'headers' => [
-        //         'Authorization' => $api_access_token,
-        //         'Content-Type' => 'application/json',
-        //         'Accept' => 'application/json'
-        //     ],
-        //     'body' => json_encode($charge_data)
-        // ]);
+        $chargeClient->request('POST', $charge_api, [
+            'headers' => [
+                'Authorization' => $api_access_token,
+                'Content-Type' => 'application/json',
+                'Accept' => 'application/json'
+            ],
+            'body' => json_encode($charge_data)
+        ]);
 
-        // $message->update(['send_status' => 2]);
+        $message->update(['send_status' => 2]);
 
     }
 
