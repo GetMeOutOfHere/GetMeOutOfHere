@@ -117,6 +117,7 @@ class PageController extends Controller
     }
 
     public function deliveryInfoNotification(Request $request){
-        Log::info("Received notification request");
+        Log::info(json_decode($request->getContent(), true));
+        return "True";
     }
 }
