@@ -36,6 +36,9 @@ class PageController extends Controller
      * @var $request
      */
     public function scheduleSms(Request $request){
+        if($request->isMethod('get')){
+            return redirect('/dashboard');
+        }
         if(Auth::user()){
             if($request->isMethod('post')){
                 $fake_sender_name = $request->input('fake_sender_name');
@@ -114,6 +117,7 @@ class PageController extends Controller
     }
 
     public function deliveryInfoNotification(Request $request){
-        Log::info("Received notification request");
+        Log::info(json_decode($request->getContent(), true));
+        return "True";
     }
 }
