@@ -16,13 +16,13 @@
         <label for="fake-sender-name" data-error="wrong" data-success="right">Fake Sender Name</label>
       </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="input-field col s12 m6 push-m3">
         <i class="material-icons prefix">account_circle</i>
         <input id="fake-sender-number" type="text" class="validate" name="fake_sender_number">
         <label for="fake-sender-number" data-error="wrong" data-success="right">Fake Sender Number</label>
       </div>
-    </div>
+    </div> -->
     <div class="row">
       <div class="input-field col s12 m6 push-m3">
         <i class="material-icons prefix">send</i>
