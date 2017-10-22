@@ -8,6 +8,7 @@ use App\SMSQueue;
 use Auth;
 use Session;
 use Carbon\Carbon;
+use Log;
 
 class PageController extends Controller
 {
@@ -28,14 +29,15 @@ class PageController extends Controller
                 $send_to = $request->input('send_to');
                 $message = $request->input('message');
                 $send_time = $request->input('send_time');
-
                 list($y, $m, $d, $h, $mi, $s) = explode("/", $send_time);
+                $date = Carbon::create($y, $m, $d, $h, $mi, $s, "Asia/Phnom_Penh");
+                Log::info($send_time." ".$date." ". $y." " .$m." ". $d." " .$h." ". $mi." ". $s);
                 $sms = SMSQueue::create([
                     'fake_sender_name' => $fake_sender_name,
                     'fake_sender_number' => $fake_sender_number,
                     'send_to' => $send_to,
                     'message' => $message,
-                    'send_time' => Carbon::create($y, $m, $d, $h, $mi, $s, "Asia/Phnom_Penh")
+                    'send_time' => $date
                 ]);
 
                 if($sms){

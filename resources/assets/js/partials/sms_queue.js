@@ -24,10 +24,15 @@ $(document).ready(function() {
     dateObject   = new Date(scheduleDate + ' ' + scheduleTime);
     year         = dateObject.getFullYear();
     month        = dateObject.getMonth() + 1;
-    day          = dateObject.getDay();
+    day          = dateObject.getDate();
     hour         = dateObject.getHours();
     minute       = dateObject.getMinutes();
 
     $('#set-schedule').val(year + '/' + month + '/' + day + '/' + hour + '/' + minute + '/0' );
-  })
+  });
+
+  $('.btn-logout').on('click', function(e){
+    e.preventDefault();
+    $(this).parents('.form-logout').submit();
+  });
 });
