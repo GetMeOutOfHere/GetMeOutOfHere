@@ -3,7 +3,7 @@
 
 <div class="row">
   <div class="col s12 center emergency">
-    <span class="waves-effect waves-light btn-large red darken-3" id="emergency-text">It's emergency! Send me a text NOW!</span>
+    <span class="waves-effect waves-light btn-large red darken-3" id="emergency-text">It's an emergency! Send me a text NOW!</span>
   </div>
 </div>
 
