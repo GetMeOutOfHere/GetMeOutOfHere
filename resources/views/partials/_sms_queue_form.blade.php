@@ -29,8 +29,10 @@
     <div class="row">
       <div class="input-field col s12 m6 push-m3">
         <i class="material-icons prefix">sms</i>
-        <textarea id="message" class="materialize-textarea" name="sms_queue[message]"></textarea>
-        <label for="message">Message</label>
+        <div class="btn" id="#rendom-button">
+          <span>Generate Message</span>
+          <input type="text" id="message" name="sms_queue[message]">
+        </div>
       </div>
     </div>
     <div class="row">
