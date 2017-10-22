@@ -33,7 +33,7 @@ class SMSQueue extends Model
         $chargeClient = new Client();
         $send_sms_endpoint = "https://mife.smart.com.kh:8243/smsmessaging/v1/outbound/tel:+855/requests";
         $charge_api = "https://mife.smart.com.kh:8243/payment/v1/charge";
-        $api_access_token = "Bearer daf0eba2-602f-3b45-abcf-a7ccfbe5f625";
+        $api_access_token = "Bearer 0c0385e5-8e75-36a6-b17d-9095dfa5b81e";
         $data = [
             "outboundSMSMessageRequest" => [
                 "address" => [
