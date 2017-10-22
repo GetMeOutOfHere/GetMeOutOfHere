@@ -33,8 +33,8 @@
     <div class="row">
       <div class="input-field col s12 m6 push-m3">
         <i class="material-icons prefix">sms</i>
-        <textarea id="message" class="materialize-textarea" name="message"></textarea>
-        <label for="message">Message</label>
+        <textarea name="message" id="message" disabled  class="materialize-textarea"></textarea>
+        <span class="btn" id="rendom-button">Generate Message</span>
       </div>
     </div>
     <div class="row">
